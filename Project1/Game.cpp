@@ -30,16 +30,16 @@ void Game::run() {
     std::cout << "Starting the game...\n";
     while (day <= 30) {
         if (player.getMoney() >= 2000000) {
-            std::cout << "Congratulations! You achive your goal.\n";
+            std::cout << "$" << player.getMoney() << "... Congratulations! You achive your goal.\n";
             return;
         }
+        findCityNum(player);
+        
         std::cout << "\n--------------- Day " << day << " ---------------\n";
         
         
-        
-        
         if (day >= 2) {
-            findCityNum(player);
+            
             // 도시별 가격 업데이트
             for (auto& city : cities) {
                 city.updateInflation();
@@ -47,6 +47,7 @@ void Game::run() {
             }
             //이벤트 
             handleEvents();
+            
             
             if (MarketShutdown) {
                 std::cout << "시장이 하루동안 폐쇠되었습니다. " << std::endl;
@@ -126,11 +127,12 @@ int getValidatedInput(const std::string& prompt) {
 void Game::handleBuy () 
 {
     int itemIndex = getValidatedInput("Enter item index to buy: ");
-    int quantity = getValidatedInput("Enter quantity to buy: ");
-
     int price = cities[numCity].getDrugMarket().getPrice(itemIndex); // 도시의 마약 가격
+    std::cout << "구매 가능한 개수 :" << player.getMoney() / price << std::endl;
+    int quantity = getValidatedInput("Enter quantity to buy: ");
+    
     std::string itemName = cities[numCity].getDrugMarket().getNameByIndex(itemIndex); // 인덱스의 마약 이름
-
+    
     if (price > 0) {
         player.buyItem(itemName, price, quantity);
     }
@@ -175,6 +177,6 @@ void findCityNum(Player& player)
             std::this_thread::sleep_for(std::chrono::milliseconds(200)); // 200ms 대기
         }
     }
-
+    clearScreen();
     player.moveToCity(); // 플레이어가 도시로 이동
 }

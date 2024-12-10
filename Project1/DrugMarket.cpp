@@ -66,11 +66,11 @@ void DrugMarket::applyInflation(float inflation) {
 
 // 인플레이션 업데이트
 void DrugMarket::updateInflation() {
-    float change = generateRandomFloat(-0.1, 0.1); // -0.1 ~ +0.1
+    float change = generateRandomFloat(-0.1, 0.2); // -0.1 ~ +0.1
     if ((drugInflation + change) > 0) {
         drugInflation += change;
     }
     
-    if (drugInflation < 0.5f) drugInflation *= 1.2f; // 값이 몰리는 것을 방지
-    if (drugInflation > 2.0f) drugInflation *= 0.9f;
+    if (drugInflation < 0.8f) drugInflation *= 1.3f; // 값이 몰리는 것을 방지
+    if (drugInflation > 1.3f) drugInflation *= 0.8f;
 }

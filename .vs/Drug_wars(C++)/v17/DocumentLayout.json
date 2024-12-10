@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Git_Repository\\Drug_wars\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8E32AE72-798E-44F8-B2E3-C4DB08BF3989}|Project1\\Project1.vcxproj|C:\\Users\\USER\\Desktop\\Git_Repository\\Drug_wars\\Project1\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8E32AE72-798E-44F8-B2E3-C4DB08BF3989}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E32AE72-798E-44F8-B2E3-C4DB08BF3989}|Project1\\Project1.vcxproj|C:\\Users\\USER\\Desktop\\Git_Repository\\Drug_wars\\Project1\\DrugMarket.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8E32AE72-798E-44F8-B2E3-C4DB08BF3989}|Project1\\Project1.vcxproj|solutionrelative:Project1\\DrugMarket.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -27,6 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Event.h",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Git_Repository\\Drug_wars\\Project1\\Event.h",
+              "RelativeDocumentMoniker": "Project1\\Event.h",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Git_Repository\\Drug_wars\\Project1\\Event.h",
+              "RelativeToolTip": "Project1\\Event.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-10T13:32:01.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DrugMarket.cpp",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Git_Repository\\Drug_wars\\Project1\\DrugMarket.cpp",
               "RelativeDocumentMoniker": "Project1\\DrugMarket.cpp",
@@ -39,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "City.h",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Git_Repository\\Drug_wars\\Project1\\City.h",
               "RelativeDocumentMoniker": "Project1\\City.h",
@@ -47,12 +64,11 @@
               "RelativeToolTip": "Project1\\City.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-10T12:18:32.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T12:18:32.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "City.cpp",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Git_Repository\\Drug_wars\\Project1\\City.cpp",
               "RelativeDocumentMoniker": "Project1\\City.cpp",
@@ -60,8 +76,7 @@
               "RelativeToolTip": "Project1\\City.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-10T12:18:31.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T12:18:31.421Z"
             }
           ]
         }
