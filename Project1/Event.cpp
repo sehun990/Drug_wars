@@ -61,7 +61,7 @@ void Event::triggerEvent(Player& player, City& city) {
     case 3: // 새로운 아이템 추가
     {
         //std::cout << "Event 3: 새로운 마약 아이템이 추가되었습니다!" << std::endl;
-        city.getDrugMarket().addDrug("Special Drug", 2000, 20, 50); // 임시 아이템 추가
+        city.getDrugMarket().addDrug("Special Drug", 1000, 20, 1); // 임시 아이템 추가
         std::cout << "도시 " << city.getName() << "에 새로운 아이템 'Special Drug'이 추가되었습니다."
             << std::endl;
     }

@@ -41,36 +41,36 @@ public:
         : Item(name, basePrice, quantity), risk(risk) {} 
 
     int getPrice() const override {
-        return basePrice; // 위험도에 따라 가격 상승
+        return basePrice * risk; // 위험도에 따라 가격 상승
     }
 };
 
 class Cocaine : public Drug
 {
 public:
-    Cocaine() : Drug("Cocaine(코카인)", 120, 10, 90) {}
+    Cocaine() : Drug("Cocaine(코카인)", 120, 10, 1) {}
 };
 
 class Marijuana : public Drug
 {
 public:
-    Marijuana() : Drug("Marijuana(마리화나)", 10, 15, 30) {}
+    Marijuana() : Drug("Marijuana(마리화나)", 10, 15, 1) {}
 };
 
 class Methamphetamine : public Drug
 {
 public:
-    Methamphetamine() : Drug("Methamphetamine(필로폰)", 20, 5, 95) {}
+    Methamphetamine() : Drug("Methamphetamine(필로폰)", 20, 5, 1) {}
 };
 
 class Heroin : public Drug
 {
 public:
-    Heroin() : Drug("Heroin(헤로인)", 100, 5, 95) {}
+    Heroin() : Drug("Heroin(헤로인)", 100, 5, 1) {}
 };
 
 class MDMA : public Drug 
 {
 public:
-    MDMA() : Drug("MDMA(엑스터시)", 20, 5, 95) {}
+    MDMA() : Drug("MDMA(엑스터시)", 20, 5, 1) {}
 };

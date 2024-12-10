@@ -26,18 +26,13 @@ Game::Game() : day(1)
 int getValidatedInput(const std::string& prompt);
 void clearScreen();
 void findCityNum(Player& player);
+void coutTextFile();
 
 void Game::run() {
     std::cout << "Starting the game...\n";
     while (day <= 30) {
         if (player.getMoney() >= 2000000) {
-            std::string fileName = "GameOver.txt";
-            std::ifstream inputFile(fileName);
-            std::string line;
-            while (std::getline(inputFile, line)) {
-                std::cout << line << std::endl;
-            }
-            inputFile.close();
+            coutTextFile();
             std::cout << "$" << player.getMoney() << "... Congratulations! You achive your goal.\n";
             return;
         }
@@ -187,4 +182,15 @@ void findCityNum(Player& player)
     }
     clearScreen();
     player.moveToCity(); // 플레이어가 도시로 이동
+}
+
+void coutTextFile() 
+{
+    std::string fileName = "GameOver.txt";
+    std::ifstream inputFile(fileName);
+    std::string line;
+    while (std::getline(inputFile, line)) {
+        std::cout << line << std::endl;
+    }
+    inputFile.close();
 }
