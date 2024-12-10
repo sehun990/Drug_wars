@@ -1,6 +1,5 @@
 #include "DrugMarket.h"
 #include <cstdlib>
-#include <ctime>
 #include <iomanip>  
 // static 멤버 초기화
 int DrugMarket::drugIndexCounter = 1;
