@@ -1,6 +1,7 @@
 #include "Game.h"
 #include <iostream>
 #include <chrono>
+#include <fstream>
 #include <thread>
 // 생성자: 초기화
 Game::Game() : day(1) 
@@ -30,6 +31,13 @@ void Game::run() {
     std::cout << "Starting the game...\n";
     while (day <= 30) {
         if (player.getMoney() >= 2000000) {
+            std::string fileName = "GameOver.txt";
+            std::ifstream inputFile(fileName);
+            std::string line;
+            while (std::getline(inputFile, line)) {
+                std::cout << line << std::endl;
+            }
+            inputFile.close();
             std::cout << "$" << player.getMoney() << "... Congratulations! You achive your goal.\n";
             return;
         }

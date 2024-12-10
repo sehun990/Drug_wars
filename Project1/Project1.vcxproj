@@ -146,6 +146,9 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="random.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="GameOver.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
